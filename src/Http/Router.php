@@ -17,7 +17,7 @@ class Router {
 
    
     public function registerRoute(string $uri, string $controller): void {
-        // Normalize the URI by removing leading/trailing slashes
+       
         $uri = trim($uri, '/');
         $this->routes[$uri] = $controller;
     }
@@ -33,4 +33,6 @@ class Router {
 
         return $this->routes[$uri];
     }
+
+    
 }
