@@ -19,6 +19,6 @@ try {
     $controller = $router->direct($uri);
     require $controller;
 } catch (App\Exceptions\NotFoundHttpException $e) {
-    require 'views/404.view.php';
+    require view('404');
 }
 

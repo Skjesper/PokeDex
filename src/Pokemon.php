@@ -6,8 +6,8 @@ namespace App;
 
 class Pokemon {
     public function __construct(
-        private int $id,
-        private string $name
+        public int $id,
+        public string $name
     ) {}
 
     public function getImageUrl(): string {

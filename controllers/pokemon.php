@@ -15,6 +15,4 @@ $selectedPokemon = $database->select(['name'])
 var_dump($selectedPokemon);
 
 
-// here we create a placeholder for safety
-
-require __DIR__ . '/../views/pokemon.view.php';
+require view('pokemon');
